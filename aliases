@@ -1,0 +1,10 @@
+autoload colors
+
+alias ls='ls -G'
+alias l='ls -lhG'         # laziness strikes again.
+alias la='ls -alhG'       # list, show all, in a humane way
+alias grep='egrep --color=auto'  # color grep output
+alias ..='cd ..'                 # save 3 keystrokes...
+alias ...='cd ../..'
+alias tf='tail -f -n 100'        # mc without lines
+alias mc='mc -s'

@@ -1,0 +1,12 @@
+autoload -Uz vcs_info
+
+setopt PROMPT_SUBST
+
+precmd () {
+  vcs_info
+}
+
+zstyle ':vcs_info:*' formats ' %F{2}%b'
+
+PS1='❧ '
+RPROMPT='%F{6}%c$vcs_info_msg_0_%f '
